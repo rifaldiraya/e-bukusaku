@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import React from 'react'
 import { BrowserRouter , Route } from 'react-router-dom'
@@ -33,12 +32,12 @@ import TentangDeveloper from './pages/TentangDeveloper'
 function App() {
   return (
     <div className="App">
-      <NavigationBar/>
+      {/* <NavigationBar/> */}
 
       <BrowserRouter>
         <Route exact path="/" component={Bab1} />
         <Route path="/bab1" component={Bab1} />
-        <Route path="/bab2" component={Bab2} />
+        {/* <Route path="/bab2" component={Bab2} />
         <Route path="/bab3" component={Bab3} />
         <Route path="/bab4" component={Bab4} />
         <Route path="/bab5" component={Bab5} />
@@ -58,7 +57,7 @@ function App() {
         <Route path="/bab19" component={Bab19} />
         <Route path="/bab20" component={Bab20} />
         <Route path="/bab21" component={Bab21} />
-        <Route path="/tentangDeveloper" component={TentangDeveloper} />
+        <Route path="/tentangDeveloper" component={TentangDeveloper} /> */}
       </BrowserRouter>
 
     </div>
