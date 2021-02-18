@@ -3,7 +3,7 @@ import {
   Card,
   CardActionArea,
   CardContent,
-  Typography
+  Typography,
 } from "@material-ui/core";
 
 export const HeaderMini = (props) => {
