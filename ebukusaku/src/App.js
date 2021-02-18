@@ -4,7 +4,7 @@ import { BrowserRouter, Route } from "react-router-dom";
 
 //layout
 // import NavigationBar from './layout/NavigationBar';
-import Sidebar from "./component/Sidebar";
+import Sidebar from "./layout/Sidebar";
 
 //pages
 import Bab1 from "./pages/Bab1";
@@ -28,7 +28,7 @@ import Bab1 from "./pages/Bab1";
 // import Bab19 from './pages/Bab19'
 // import Bab20 from './pages/Bab20'
 // import Bab21 from './pages/Bab21'
-import TentangDeveloper from './pages/TentangDeveloper'
+// import TentangDeveloper from './pages/TentangDeveloper'
 
 function App() {
   return (
