@@ -1,16 +1,39 @@
 import React from 'react';
 import clsx from 'clsx';
+
+//MUI
 import { makeStyles } from '@material-ui/core/styles';
 import SwipeableDrawer from '@material-ui/core/SwipeableDrawer';
 import List from '@material-ui/core/List';
+import Typography from '@material-ui/core/Typography';
+import Divider from '@material-ui/core/Divider';
+
+//MUI Icon
 import BookIcon from '@material-ui/icons/Book';
 
+//Component
 import ListItemComponent from './ListItemComponent';
 
 const useStyles = makeStyles({
     list: {
         width: 250,
     },
+    head: {
+        width: 250,
+        marginTop:50,
+        marginBottom:10,
+        textAlign: 'center'
+    },
+    divider: {
+        backgroundColor: '#00af91'
+    },
+    footer: {
+        position: 'fixed',
+        bottom: 0,
+        left: 0,
+        width: 250,
+        textAlign: 'center'
+    }
 });
 
 // sidebar nnt ada head, list, dan foot
@@ -34,17 +57,10 @@ export default function SideBar() {
             onKeyDown={handleBar(false)}
         >
             <List>
-                <ListItemComponent icon={(<BookIcon/>)} text="Bab 1" />
-                <ListItemComponent icon={(<BookIcon/>)} text="Bab 2" />
-                <ListItemComponent icon={(<BookIcon/>)} text="Bab 3" />
-                <ListItemComponent icon={(<BookIcon/>)} text="Bab 4" />
-                <ListItemComponent icon={(<BookIcon/>)} text="Bab 5" />
-                <ListItemComponent icon={(<BookIcon/>)} text="Bab 6" />
-                <ListItemComponent icon={(<BookIcon/>)} text="Bab 7" />
-                <ListItemComponent icon={(<BookIcon/>)} text="Bab 8" />
-                <ListItemComponent icon={(<BookIcon/>)} text="Bab 9" />
-                <ListItemComponent icon={(<BookIcon/>)} text="Bab 10" />
-                <ListItemComponent icon={(<BookIcon/>)} text="Bab 11" />
+                <ListItemComponent icon={(<BookIcon/>)} text="Bab 1" route="/"/>
+                <ListItemComponent icon={(<BookIcon/>)} text="Bab 2" route="/"/>
+                <Divider light={true} className={classes.divider}/>
+                <ListItemComponent icon={(<BookIcon/>)} text="Tentang Kami" route="/"/>
             </List>
         </div>
     );
@@ -55,7 +71,24 @@ export default function SideBar() {
             onClose={handleBar(false)}
             onOpen={handleBar(true)}
         >
+            <div className={classes.head}>
+                <Typography variant="h6">
+                    [logo]
+                </Typography>
+                <Typography variant="h5">
+                    BUKU SAKU
+                </Typography>
+                <Typography variant="h6">
+                    ALHIKAM MALANG
+                </Typography>
+            </div>
+            <Divider light={true} className={classes.divider}/>
             {list()}
+            <div className={classes.footer}>
+                <Typography variant="caption">
+                    Copyright © IT AL-HIKAM {new Date().getFullYear()}
+                </Typography>
+            </div>
         </SwipeableDrawer>
     );
 }

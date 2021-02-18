@@ -34,9 +34,8 @@ function App() {
   return (
     <div className="App">
       {/* <NavigationBar/> */}
-      <Sidebar />
-
       <BrowserRouter>
+        <Sidebar />
         <Route exact path="/" component={Bab1} />
         <Route path="/bab1" component={Bab1} />
         {/* <Route path="/bab2" component={Bab2} />
