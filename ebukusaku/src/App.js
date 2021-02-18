@@ -1,12 +1,13 @@
-// import logo from './logo.svg';
-import './App.css';
-import React from 'react'
-// import { BrowserRouter, Route } from 'react-router-dom'
+import "./App.css";
+import React from "react";
+import { BrowserRouter, Route } from "react-router-dom";
+
 //layout
 // import NavigationBar from './layout/NavigationBar';
-import Sidebar from './component/Sidebar';
+import Sidebar from "./component/Sidebar";
+
 //pages
-// import Bab1 from './pages/Bab1'
+import Bab1 from "./pages/Bab1";
 // import Bab2 from './pages/Bab2'
 // import Bab3 from './pages/Bab3'
 // import Bab4 from './pages/Bab4'
@@ -27,17 +28,18 @@ import Sidebar from './component/Sidebar';
 // import Bab19 from './pages/Bab19'
 // import Bab20 from './pages/Bab20'
 // import Bab21 from './pages/Bab21'
-// import TentangDeveloper from './pages/TentangDeveloper'
+import TentangDeveloper from './pages/TentangDeveloper'
 
 function App() {
   return (
     <div className="App">
       {/* <NavigationBar/> */}
-      <Sidebar/>
-      {/* <BrowserRouter>
+      <Sidebar />
+
+      <BrowserRouter>
         <Route exact path="/" component={Bab1} />
         <Route path="/bab1" component={Bab1} />
-        <Route path="/bab2" component={Bab2} />
+        {/* <Route path="/bab2" component={Bab2} />
         <Route path="/bab3" component={Bab3} />
         <Route path="/bab4" component={Bab4} />
         <Route path="/bab5" component={Bab5} />
@@ -59,7 +61,7 @@ function App() {
         <Route path="/bab21" component={Bab21} />
         <Route path="/tentangDeveloper" component={TentangDeveloper} />
       </BrowserRouter> */}
-
+      </BrowserRouter>
     </div>
   );
 }
