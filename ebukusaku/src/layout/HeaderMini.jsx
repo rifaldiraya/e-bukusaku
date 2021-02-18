@@ -11,7 +11,7 @@ export const HeaderMini = (props) => {
     <Fragment>
       <Card>
         <CardActionArea>
-          <div className="img-thumb">
+          <div>
             <img className="img-thumb" src={props.img} alt={props.alt} />
           </div>
           <CardContent>
