@@ -1,41 +1,40 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
 import React from 'react'
-import { BrowserRouter , Route } from 'react-router-dom'
-
+// import { BrowserRouter, Route } from 'react-router-dom'
 //layout
-import NavigationBar from './layout/NavigationBar';
-
+// import NavigationBar from './layout/NavigationBar';
+import Sidebar from './component/Sidebar';
 //pages
-import Bab1 from './pages/Bab1'
-import Bab2 from './pages/Bab2'
-import Bab3 from './pages/Bab3'
-import Bab4 from './pages/Bab4'
-import Bab5 from './pages/Bab5'
-import Bab6 from './pages/Bab6'
-import Bab7 from './pages/Bab7'
-import Bab8 from './pages/Bab8'
-import Bab9 from './pages/Bab9'
-import Bab10 from './pages/Bab10'
-import Bab11 from './pages/Bab11'
-import Bab12 from './pages/Bab12'
-import Bab13 from './pages/Bab13'
-import Bab14 from './pages/Bab14'
-import Bab15 from './pages/Bab15'
-import Bab16 from './pages/Bab16'
-import Bab17 from './pages/Bab17'
-import Bab18 from './pages/Bab18'
-import Bab19 from './pages/Bab19'
-import Bab20 from './pages/Bab20'
-import Bab21 from './pages/Bab21'
-import TentangDeveloper from './pages/TentangDeveloper'
+// import Bab1 from './pages/Bab1'
+// import Bab2 from './pages/Bab2'
+// import Bab3 from './pages/Bab3'
+// import Bab4 from './pages/Bab4'
+// import Bab5 from './pages/Bab5'
+// import Bab6 from './pages/Bab6'
+// import Bab7 from './pages/Bab7'
+// import Bab8 from './pages/Bab8'
+// import Bab9 from './pages/Bab9'
+// import Bab10 from './pages/Bab10'
+// import Bab11 from './pages/Bab11'
+// import Bab12 from './pages/Bab12'
+// import Bab13 from './pages/Bab13'
+// import Bab14 from './pages/Bab14'
+// import Bab15 from './pages/Bab15'
+// import Bab16 from './pages/Bab16'
+// import Bab17 from './pages/Bab17'
+// import Bab18 from './pages/Bab18'
+// import Bab19 from './pages/Bab19'
+// import Bab20 from './pages/Bab20'
+// import Bab21 from './pages/Bab21'
+// import TentangDeveloper from './pages/TentangDeveloper'
 
 function App() {
   return (
     <div className="App">
-      <NavigationBar/>
-
-      <BrowserRouter>
+      {/* <NavigationBar/> */}
+      <Sidebar/>
+      {/* <BrowserRouter>
         <Route exact path="/" component={Bab1} />
         <Route path="/bab1" component={Bab1} />
         <Route path="/bab2" component={Bab2} />
@@ -59,7 +58,7 @@ function App() {
         <Route path="/bab20" component={Bab20} />
         <Route path="/bab21" component={Bab21} />
         <Route path="/tentangDeveloper" component={TentangDeveloper} />
-      </BrowserRouter>
+      </BrowserRouter> */}
 
     </div>
   );
