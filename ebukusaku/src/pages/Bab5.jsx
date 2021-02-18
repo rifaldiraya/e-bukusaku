@@ -1,5 +1,5 @@
 import React, { Component, Fragment } from "react";
-import HeaderMini from "../layout/HeaderMini";
+import { HeaderMini } from "../layout/HeaderMini";
 
 class Bab5 extends Component {
   render() {
