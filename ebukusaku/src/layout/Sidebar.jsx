@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import clsx from 'clsx';
 
 //MUI
@@ -7,9 +7,12 @@ import SwipeableDrawer from '@material-ui/core/SwipeableDrawer';
 import List from '@material-ui/core/List';
 import Typography from '@material-ui/core/Typography';
 import Divider from '@material-ui/core/Divider';
+import IconButton from '@material-ui/core/IconButton';
 
 //MUI Icon
 import BookIcon from '@material-ui/icons/Book';
+import MenuIcon from '@material-ui/icons/Menu';
+
 
 //Component
 import ListItemComponent from './ListItemComponent';
@@ -20,7 +23,7 @@ const useStyles = makeStyles({
     },
     head: {
         width: 250,
-        marginTop:50,
+        marginTop:20,
         marginBottom:10,
         textAlign: 'center'
     },
@@ -28,12 +31,12 @@ const useStyles = makeStyles({
         backgroundColor: '#00af91'
     },
     footer: {
-        position: 'fixed',
         bottom: 0,
         left: 0,
         width: 250,
-        textAlign: 'center'
-    }
+        textAlign: 'center',
+        fontSize: '0.7em'
+    },
 });
 
 // sidebar nnt ada head, list, dan foot
@@ -49,6 +52,7 @@ export default function SideBar() {
         }
         setState({ ...state, openBar: open });
     };
+
     const list = () => (
         <div
             className={clsx(classes.list)}
@@ -57,8 +61,11 @@ export default function SideBar() {
             onKeyDown={handleBar(false)}
         >
             <List>
-                <ListItemComponent icon={(<BookIcon/>)} text="Bab 1" route="/"/>
-                <ListItemComponent icon={(<BookIcon/>)} text="Bab 2" route="/"/>
+                {[
+                    {title: 'Bab 1', route: '/'}, {title: 'Bab 2', route: '/'}, {title: 'Bab 3', route: '/'},
+                ].map((text, index) => (
+                    <ListItemComponent key={index} icon={(<BookIcon/>)} text={text.title} route={text.route}/>
+                ))}
                 <Divider light={true} className={classes.divider}/>
                 <ListItemComponent icon={(<BookIcon/>)} text="Tentang Kami" route="/"/>
             </List>
@@ -66,29 +73,32 @@ export default function SideBar() {
     );
 
     return (
-        <SwipeableDrawer
-            open={state.openBar}
-            onClose={handleBar(false)}
-            onOpen={handleBar(true)}
-        >
-            <div className={classes.head}>
-                <Typography variant="h6">
-                    [logo]
-                </Typography>
-                <Typography variant="h5">
-                    BUKU SAKU
-                </Typography>
-                <Typography variant="h6">
-                    ALHIKAM MALANG
-                </Typography>
-            </div>
-            <Divider light={true} className={classes.divider}/>
-            {list()}
-            <div className={classes.footer}>
-                <Typography variant="caption">
-                    Copyright © IT AL-HIKAM {new Date().getFullYear()}
-                </Typography>
-            </div>
-        </SwipeableDrawer>
+        <Fragment>
+            <IconButton color="primary" aria-label="toggle-nav" onClick={handleBar(true)}>
+                <MenuIcon/>
+            </IconButton>
+            <SwipeableDrawer
+                open={state.openBar}
+                onClose={handleBar(false)}
+                onOpen={handleBar(true)}
+            >
+                <div className={classes.head}>
+                    <img width='72' src='assets/img/logo-Al-Hikam.png' alt='Logo-Alhikam' />
+                    <Typography variant="h5">
+                        BUKU SAKU
+                    </Typography>
+                    <Typography variant="h6">
+                        ALHIKAM MALANG
+                    </Typography>
+                </div>
+                <Divider light={true} className={classes.divider}/>
+                {list()}
+                <div className={classes.footer}>
+                    <Typography variant="caption">
+                        Copyright © IT AL-HIKAM {new Date().getFullYear()}
+                    </Typography>
+                </div>
+            </SwipeableDrawer>
+        </Fragment>
     );
 }
