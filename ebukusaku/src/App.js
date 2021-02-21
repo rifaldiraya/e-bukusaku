@@ -20,7 +20,7 @@ import Sidebar from "./layout/Sidebar";
 // import Bab11 from './pages/Bab11'
 import Bab12 from './pages/Bab12'
 import Bab13 from './pages/Bab13'
-// import Bab14 from './pages/Bab14'
+import Bab14 from './pages/Bab14'
 // import Bab15 from './pages/Bab15'
 // import Bab16 from './pages/Bab16'
 // import Bab17 from './pages/Bab17'
@@ -50,8 +50,8 @@ function App() {
         <Route path="/bab11" component={Bab11} /> */}
         <Route path="/12" component={Bab12} />
         <Route path="/13" component={Bab13} />
-        {/* <Route path="/bab14" component={Bab14} />
-        <Route path="/bab15" component={Bab15} />
+        <Route path="/14" component={Bab14} />
+        {/* <Route path="/bab15" component={Bab15} />
         <Route path="/bab16" component={Bab16} />
         <Route path="/bab17" component={Bab17} />
         <Route path="/bab18" component={Bab18} />

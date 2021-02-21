@@ -63,6 +63,7 @@ export default function SideBar() {
             <List>
                 <ListItemComponent icon={(<BookIcon/>)} text={'Bab 12'} route={'/12'}/>
                 <ListItemComponent icon={(<BookIcon/>)} text={'Bab 13'} route={'/13'}/>
+                <ListItemComponent icon={(<BookIcon/>)} text={'Bab 14'} route={'/14'}/>
                 <Divider light={true} className={classes.divider}/>
                 <ListItemComponent icon={(<BookIcon/>)} text="Tentang Kami" route="/"/>
             </List>
