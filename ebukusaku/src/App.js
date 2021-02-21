@@ -7,7 +7,7 @@ import { BrowserRouter, Route } from "react-router-dom";
 import Sidebar from "./layout/Sidebar";
 
 //pages
-import Bab1 from "./pages/Bab1";
+// import Bab1 from "./pages/Bab1";
 // import Bab2 from './pages/Bab2'
 // import Bab3 from './pages/Bab3'
 // import Bab4 from './pages/Bab4'
@@ -18,8 +18,8 @@ import Bab1 from "./pages/Bab1";
 // import Bab9 from './pages/Bab9'
 // import Bab10 from './pages/Bab10'
 // import Bab11 from './pages/Bab11'
-// import Bab12 from './pages/Bab12'
-// import Bab13 from './pages/Bab13'
+import Bab12 from './pages/Bab12'
+import Bab13 from './pages/Bab13'
 // import Bab14 from './pages/Bab14'
 // import Bab15 from './pages/Bab15'
 // import Bab16 from './pages/Bab16'
@@ -36,8 +36,8 @@ function App() {
       {/* <NavigationBar/> */}
       <BrowserRouter>
         <Sidebar />
-        <Route exact path="/" component={Bab1} />
-        <Route path="/bab1" component={Bab1} />
+        {/* <Route exact path="/" component={Bab1} />
+        <Route path="/bab1" component={Bab1} /> */}
         {/* <Route path="/bab2" component={Bab2} />
         <Route path="/bab3" component={Bab3} />
         <Route path="/bab4" component={Bab4} />
@@ -47,10 +47,10 @@ function App() {
         <Route path="/bab8" component={Bab8} />
         <Route path="/bab9" component={Bab9} />
         <Route path="/bab10" component={Bab10} />
-        <Route path="/bab11" component={Bab11} />
-        <Route path="/bab12" component={Bab12} />
-        <Route path="/bab13" component={Bab13} />
-        <Route path="/bab14" component={Bab14} />
+        <Route path="/bab11" component={Bab11} /> */}
+        <Route path="/12" component={Bab12} />
+        <Route path="/13" component={Bab13} />
+        {/* <Route path="/bab14" component={Bab14} />
         <Route path="/bab15" component={Bab15} />
         <Route path="/bab16" component={Bab16} />
         <Route path="/bab17" component={Bab17} />
@@ -58,8 +58,7 @@ function App() {
         <Route path="/bab19" component={Bab19} />
         <Route path="/bab20" component={Bab20} />
         <Route path="/bab21" component={Bab21} />
-        <Route path="/tentangDeveloper" component={TentangDeveloper} />
-      </BrowserRouter> */}
+        <Route path="/tentangDeveloper" component={TentangDeveloper} /> */}
       </BrowserRouter>
     </div>
   );

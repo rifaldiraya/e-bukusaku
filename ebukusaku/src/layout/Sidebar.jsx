@@ -61,11 +61,8 @@ export default function SideBar() {
             onKeyDown={handleBar(false)}
         >
             <List>
-                {[
-                    {title: 'Bab 1', route: '/'}, {title: 'Bab 2', route: '/'}, {title: 'Bab 3', route: '/'},
-                ].map((text, index) => (
-                    <ListItemComponent key={index} icon={(<BookIcon/>)} text={text.title} route={text.route}/>
-                ))}
+                <ListItemComponent icon={(<BookIcon/>)} text={'Bab 12'} route={'/12'}/>
+                <ListItemComponent icon={(<BookIcon/>)} text={'Bab 13'} route={'/13'}/>
                 <Divider light={true} className={classes.divider}/>
                 <ListItemComponent icon={(<BookIcon/>)} text="Tentang Kami" route="/"/>
             </List>
