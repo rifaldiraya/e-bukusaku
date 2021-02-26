@@ -12,10 +12,12 @@ import IconButton from '@material-ui/core/IconButton';
 //MUI Icon
 import BookIcon from '@material-ui/icons/Book';
 import MenuIcon from '@material-ui/icons/Menu';
-
+import ContactPhoneIcon from '@material-ui/icons/ContactPhone';
 
 //Component
 import ListItemComponent from './ListItemComponent';
+
+import Data from '../data/file2.json';
 
 const useStyles = makeStyles({
     list: {
@@ -61,11 +63,13 @@ export default function SideBar() {
             onKeyDown={handleBar(false)}
         >
             <List>
-                <ListItemComponent icon={(<BookIcon/>)} text={'Bab 12'} route={'/12'}/>
-                <ListItemComponent icon={(<BookIcon/>)} text={'Bab 13'} route={'/13'}/>
-                <ListItemComponent icon={(<BookIcon/>)} text={'Bab 14'} route={'/14'}/>
+                {
+                    Data.map((v,i) => (
+                        <ListItemComponent key={v.id} icon={(<BookIcon/>)} text={v.subtitle} route={'/'+(v.id)}/>
+                    ))
+                }
                 <Divider light={true} className={classes.divider}/>
-                <ListItemComponent icon={(<BookIcon/>)} text="Tentang Kami" route="/"/>
+                <ListItemComponent icon={(<ContactPhoneIcon/>)} text="Tentang Kami" route="/"/>
             </List>
         </div>
     );
