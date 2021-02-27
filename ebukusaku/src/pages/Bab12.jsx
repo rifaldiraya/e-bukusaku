@@ -67,34 +67,92 @@ export default class Bab12 extends Component {
                 <br/>
                 <Typography style={{margin: 5, fontSize: 24}}>اللّٰهُمَّ صَلِّ وَسَلِّمْ وَبَارِكْ عَلَيْهِ</Typography>
                 <Section variant='1' text={Data[0].text.section9}/>
+                <br/>
+                <Typography style={{margin: 5, fontSize: 24}}>اللّٰهُمَّ صَلِّ وَسَلِّمْ وَبَارِكْ عَلَيْهِ</Typography>
                 <Section variant='1' text={Data[0].text.section10}/>
+                <br/>
+                <Typography style={{margin: 5, fontSize: 24}}>اللّٰهُمَّ صَلِّ وَسَلِّمْ وَبَارِكْ عَلَيْهِ</Typography>
                 <Section variant='1' text={Data[0].text.section11}/>
+                <br/>
+                <Typography style={{margin: 5, fontSize: 24}}>اللّٰهُمَّ صَلِّ وَسَلِّمْ وَبَارِكْ عَلَيْهِ</Typography>
                 <Section variant='1' text={Data[0].text.section12}/>
+                <br/>
+                <Typography style={{margin: 5, fontSize: 24}}>اللّٰهُمَّ صَلِّ وَسَلِّمْ وَبَارِكْ عَلَيْهِ</Typography>
                 <Section variant='1' text={Data[0].text.section13}/>
+                <br/>
+                <Typography style={{margin: 5, fontSize: 24}}>اللّٰهُمَّ صَلِّ وَسَلِّمْ وَبَارِكْ عَلَيْهِ</Typography>
                 <Section variant='1' text={Data[0].text.section14}/>
+                <br/>
+                <Typography style={{margin: 5, fontSize: 24}}>اللّٰهُمَّ صَلِّ وَسَلِّمْ وَبَارِكْ عَلَيْهِ</Typography>
                 <Section variant='1' text={Data[0].text.section15}/>
+                <br/>
+                <Typography style={{margin: 5, fontSize: 24}}>اللّٰهُمَّ صَلِّ وَسَلِّمْ وَبَارِكْ عَلَيْهِ</Typography>
                 <Section variant='1' text={Data[0].text.section16}/>
+                <br/>
+                <Typography style={{margin: 5, fontSize: 24}}>اللّٰهُمَّ صَلِّ وَسَلِّمْ وَبَارِكْ عَلَيْهِ</Typography>
                 <Section variant='1' text={Data[0].text.section17}/>
+                <br/>
+                <Typography style={{margin: 5, fontSize: 24}}>اللّٰهُمَّ صَلِّ وَسَلِّمْ وَبَارِكْ عَلَيْهِ</Typography>
                 <Section variant='1' text={Data[0].text.section18}/>
+                <br/>
+                <Typography style={{margin: 5, fontSize: 24}}>اللّٰهُمَّ صَلِّ وَسَلِّمْ وَبَارِكْ عَلَيْهِ</Typography>
                 <Section variant='1' text={Data[0].text.section19}/>
+                <br/>
+                <Typography style={{margin: 5, fontSize: 24}}>اللّٰهُمَّ صَلِّ وَسَلِّمْ وَبَارِكْ عَلَيْهِ</Typography>
                 <Section variant='1' text={Data[0].text.section20}/>
+                <br/>
+                <Typography style={{margin: 5, fontSize: 24}}>اللّٰهُمَّ صَلِّ وَسَلِّمْ وَبَارِكْ عَلَيْهِ</Typography>
                 <Section variant='1' text={Data[0].text.section21}/>
+                <br/>
+                <Typography style={{margin: 5, fontSize: 24}}>اللّٰهُمَّ صَلِّ وَسَلِّمْ وَبَارِكْ عَلَيْهِ</Typography>
                 <Section variant='1' text={Data[0].text.section22}/>
+                <br/>
+                <Typography style={{margin: 5, fontSize: 24}}>اللّٰهُمَّ صَلِّ وَسَلِّمْ وَبَارِكْ عَلَيْهِ</Typography>
                 <Section variant='1' text={Data[0].text.section23}/>
+                <br/>
+                <Typography style={{margin: 5, fontSize: 24}}>اللّٰهُمَّ صَلِّ وَسَلِّمْ وَبَارِكْ عَلَيْهِ</Typography>
                 <Section variant='1' text={Data[0].text.section24}/>
+                <br/>
+                <Typography style={{margin: 5, fontSize: 24}}>اللّٰهُمَّ صَلِّ وَسَلِّمْ وَبَارِكْ عَلَيْهِ</Typography>
                 <Section variant='1' text={Data[0].text.section25}/>
+                <br/>
+                <Typography style={{margin: 5, fontSize: 24}}>اللّٰهُمَّ صَلِّ وَسَلِّمْ وَبَارِكْ عَلَيْهِ</Typography>
                 <Section variant='1' text={Data[0].text.section26}/>
+                <br/>
+                <Typography style={{margin: 5, fontSize: 24}}>اللّٰهُمَّ صَلِّ وَسَلِّمْ وَبَارِكْ عَلَيْهِ</Typography>
                 <Section variant='1' text={Data[0].text.section27}/>
+                <br/>
+                <Typography style={{margin: 5, fontSize: 24}}>اللّٰهُمَّ صَلِّ وَسَلِّمْ وَبَارِكْ عَلَيْهِ</Typography>
                 <Section variant='1' text={Data[0].text.section28}/>
+                <br/>
+                <Typography style={{margin: 5, fontSize: 24}}>اللّٰهُمَّ صَلِّ وَسَلِّمْ وَبَارِكْ عَلَيْهِ</Typography>
                 <Section variant='1' text={Data[0].text.section29}/>
+                <br/>
+                <Typography style={{margin: 5, fontSize: 24}}>اللّٰهُمَّ صَلِّ وَسَلِّمْ وَبَارِكْ عَلَيْهِ</Typography>
                 <Section variant='1' text={Data[0].text.section30}/>
+                <br/>
+                <Typography style={{margin: 5, fontSize: 24}}>اللّٰهُمَّ صَلِّ وَسَلِّمْ وَبَارِكْ عَلَيْهِ</Typography>
                 <Section variant='1' text={Data[0].text.section31}/>
+                <br/>
+                <Typography style={{margin: 5, fontSize: 24}}>اللّٰهُمَّ صَلِّ وَسَلِّمْ وَبَارِكْ عَلَيْهِ</Typography>
                 <Section variant='1' text={Data[0].text.section32}/>
+                <br/>
+                <Typography style={{margin: 5, fontSize: 24}}>اللّٰهُمَّ صَلِّ وَسَلِّمْ وَبَارِكْ عَلَيْهِ</Typography>
                 <Section variant='1' text={Data[0].text.section33}/>
+                <br/>
+                <Typography style={{margin: 5, fontSize: 24}}>اللّٰهُمَّ صَلِّ وَسَلِّمْ وَبَارِكْ عَلَيْهِ</Typography>
                 <Section variant='1' text={Data[0].text.section34}/>
+                <br/>
+                <Typography style={{margin: 5, fontSize: 24}}>اللّٰهُمَّ صَلِّ وَسَلِّمْ وَبَارِكْ عَلَيْهِ</Typography>
                 <Section variant='1' text={Data[0].text.section35}/>
+                <br/>
+                <Typography style={{margin: 5, fontSize: 24}}>اللّٰهُمَّ صَلِّ وَسَلِّمْ وَبَارِكْ عَلَيْهِ</Typography>
                 <Section variant='1' text={Data[0].text.section36}/>
+                <br/>
+                <Typography style={{margin: 5, fontSize: 24}}>اللّٰهُمَّ صَلِّ وَسَلِّمْ وَبَارِكْ عَلَيْهِ</Typography>
                 <Section variant='1' text={Data[0].text.section37}/>
+                <br/>
+                <Typography style={{margin: 5, fontSize: 24}}>اللّٰهُمَّ صَلِّ وَسَلِّمْ وَبَارِكْ عَلَيْهِ</Typography>
                 <Section variant='1' text={Data[0].text.section38}/>
                 <img src='assets/img/pembatas.png' alt='pembatas' style={{bottom:0, left:0, marginTop: 100}}/>
             </div>
