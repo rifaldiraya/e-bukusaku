@@ -35,10 +35,16 @@ const useStyles = makeStyles({
     footer: {
         bottom: 0,
         left: 0,
-        width: 250,
         textAlign: 'center',
         fontSize: '0.7em'
     },
+    title: {
+        color: '#00833B'
+    },
+    subtitle: {
+        fontSize: '0.9em',
+        color: '#00833B'
+    }
 });
 
 // sidebar nnt ada head, list, dan foot
@@ -86,18 +92,18 @@ export default function SideBar() {
             >
                 <div className={classes.head}>
                     <img width='72' src='assets/img/logo-Al-Hikam.png' alt='Logo-Alhikam' />
-                    <Typography variant="h5">
+                    <Typography variant="h6" className={classes.title}>
                         BUKU SAKU
                     </Typography>
-                    <Typography variant="h6">
-                        ALHIKAM MALANG
+                    <Typography className={classes.subtitle}>
+                        PESANTREN AL-HIKAM MALANG
                     </Typography>
                 </div>
                 <Divider light={true} className={classes.divider}/>
                 {list()}
                 <div className={classes.footer}>
                     <Typography variant="caption">
-                        Copyright © IT AL-HIKAM {new Date().getFullYear()}
+                        Copyright © PP AL-HIKAM MLG {new Date().getFullYear()}
                     </Typography>
                 </div>
             </SwipeableDrawer>
