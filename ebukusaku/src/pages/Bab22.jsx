@@ -6,7 +6,7 @@ import Content from '../layout/Content';
 export default class Bab22 extends Component {
     render() {
         return (
-            <Content data={Data[10]} variant='1'/>
+            <Content data={Data[10]} variant='2'/>
         )
     }
 }

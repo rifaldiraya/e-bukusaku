@@ -7,7 +7,7 @@ export default class Bab18 extends Component {
     render() {
         return (
             <div>
-                <Content data={Data[6]} variant='1'/>
+                <Content data={Data[6]} variant='2'/>
             </div>
         )
     }

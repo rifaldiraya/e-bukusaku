@@ -6,7 +6,7 @@ import Content from '../layout/Content';
 export default class Bab21 extends Component {
     render() {
         return (
-            <Content data={Data[9]} variant='1'/>
+            <Content data={Data[9]} variant='2'/>
         )
     }
 }
