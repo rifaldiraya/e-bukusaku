@@ -7,7 +7,7 @@ import { BrowserRouter, Route } from "react-router-dom";
 import Sidebar from "./layout/Sidebar";
 
 //pages
-import Bab1 from "./pages/Bab1";
+// import Bab1 from "./pages/Bab1";
 // import Bab2 from './pages/Bab2'
 // import Bab3 from './pages/Bab3'
 // import Bab4 from './pages/Bab4'
@@ -18,27 +18,27 @@ import Bab1 from "./pages/Bab1";
 // import Bab9 from './pages/Bab9'
 // import Bab10 from './pages/Bab10'
 // import Bab11 from './pages/Bab11'
-// import Bab12 from './pages/Bab12'
-// import Bab13 from './pages/Bab13'
-// import Bab14 from './pages/Bab14'
-// import Bab15 from './pages/Bab15'
-// import Bab16 from './pages/Bab16'
-// import Bab17 from './pages/Bab17'
-// import Bab18 from './pages/Bab18'
-// import Bab19 from './pages/Bab19'
-// import Bab20 from './pages/Bab20'
-// import Bab21 from './pages/Bab21'
+import Bab12 from './pages/Bab12'
+import Bab13 from './pages/Bab13'
+import Bab14 from './pages/Bab14'
+import Bab15 from './pages/Bab15'
+import Bab16 from './pages/Bab16'
+import Bab17 from './pages/Bab17'
+import Bab18 from './pages/Bab18'
+import Bab19 from './pages/Bab19'
+import Bab20 from './pages/Bab20'
+import Bab21 from './pages/Bab21'
+import Bab22 from './pages/Bab22'
 // import TentangDeveloper from './pages/TentangDeveloper'
 
 function App() {
   return (
     <div className="App">
       {/* <NavigationBar/> */}
-      <Sidebar />
-
       <BrowserRouter>
-        <Route exact path="/" component={Bab1} />
-        <Route path="/bab1" component={Bab1} />
+        <Sidebar />
+        {/* <Route exact path="/" component={Bab1} />
+        <Route path="/bab1" component={Bab1} /> */}
         {/* <Route path="/bab2" component={Bab2} />
         <Route path="/bab3" component={Bab3} />
         <Route path="/bab4" component={Bab4} />
@@ -48,19 +48,19 @@ function App() {
         <Route path="/bab8" component={Bab8} />
         <Route path="/bab9" component={Bab9} />
         <Route path="/bab10" component={Bab10} />
-        <Route path="/bab11" component={Bab11} />
-        <Route path="/bab12" component={Bab12} />
-        <Route path="/bab13" component={Bab13} />
-        <Route path="/bab14" component={Bab14} />
-        <Route path="/bab15" component={Bab15} />
-        <Route path="/bab16" component={Bab16} />
-        <Route path="/bab17" component={Bab17} />
-        <Route path="/bab18" component={Bab18} />
-        <Route path="/bab19" component={Bab19} />
-        <Route path="/bab20" component={Bab20} />
-        <Route path="/bab21" component={Bab21} />
-        <Route path="/tentangDeveloper" component={TentangDeveloper} />
-      </BrowserRouter> */}
+        <Route path="/bab11" component={Bab11} /> */}
+        <Route path="/12" component={Bab12} />
+        <Route path="/13" component={Bab13} />
+        <Route path="/14" component={Bab14} />
+        <Route path="/15" component={Bab15} />
+        <Route path="/16" component={Bab16} />
+        <Route path="/17" component={Bab17} />
+        <Route path="/18" component={Bab18} />
+        <Route path="/19" component={Bab19} />
+        <Route path="/20" component={Bab20} />
+        <Route path="/21" component={Bab21} />
+        <Route path="/22" component={Bab22} />
+        {/* <Route path="/tentangDeveloper" component={TentangDeveloper} /> */}
       </BrowserRouter>
     </div>
   );
